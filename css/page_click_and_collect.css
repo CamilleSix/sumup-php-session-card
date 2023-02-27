@@ -1,0 +1,223 @@
+.reservationParent{
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.reservationParent .subtitle{
+    color: var(--basicColor2);
+    font-size: 0.9em;
+}
+.reservationParent section.uniformSpacing{
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.tillerResaParent{
+    width: 30em;
+    max-width: 90%;
+    margin: auto;
+}
+
+.tillerResaParent form{
+    margin: 0 auto 3em;
+}
+
+.reservationParent .iWant{
+    display: block;
+    padding: 2em 0 1em;
+    margin-top: 2em ;
+    position: relative;
+}
+.reservationParent .iWant:before{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3em ;
+    border-top: 2px dotted var(--basicColor2);
+    content: "";
+    top: 0;
+}
+
+.restaurantList li.selectedResto{
+    border: 5px solid var(--basicColor2);
+    opacity: 1;
+}
+.restaurantList li{
+    padding: 3em 1em ;
+    box-sizing: border-box;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    border-radius: var(--basicBorderRadius);
+    overflow: hidden;
+    width: 47.5%;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-bottom: 1em ;
+    border: 5px solid white;
+}
+
+select.hourSelect{
+    display: none;
+}
+
+select.activeSelect{
+    display: block;
+}
+.restaurantList li:hover{
+    border: 5px solid var(--basicColor2);
+}
+.restaurantList li:before{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    content: '';
+}
+
+.restaurantList span{
+    position: relative;
+    z-index: 2;
+}
+.tillerResaParent .leftRestaurant{
+    margin-right: 5%;
+}
+
+.reservationParent .labelLeft{
+    padding-right: 2.5%;
+    box-sizing: border-box;
+}
+
+.reservationParent .labelRight{
+    padding-left: 2.5%;
+    box-sizing: border-box;
+}
+
+.reservationParent .reservationButton{
+    width: auto;
+    margin-top: 2em;
+}
+
+.specialTablePart{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: var(--basicBorderRadius);
+    padding: 0.5em ;
+}
+
+.specialTablePart div{
+    color: var(--basicColor2);
+}
+
+.errorBloc{
+    margin-bottom: 2em;
+    background-color: #5D0C16FF;
+    color: white;
+    border-radius: var(--basicBorderRadius);
+    width: 30em;
+    max-width: 90%;
+}
+.emptyCard{
+    margin: 2em auto ;
+    padding: 1em ;
+    background-color: whitesmoke;
+    color: Dimgray;
+    border-radius: var(--basicBorderRadius);
+    width: 30em;
+    max-width: 90%;
+}
+.validReservation{
+    background-color: #277563;
+    margin-bottom: 2em;
+    color: white;
+    border-radius: var(--basicBorderRadius);
+    width: 30em;
+    max-width: 90%;
+}
+
+.totalPayed{
+    color: #277563;
+    margin-bottom: 2em;
+    background-color: #d6f6e1;
+    border-radius: var(--basicBorderRadius);
+}
+.validReservation strong.thanks{
+    margin-bottom: 0.5em ;
+}
+
+.validReservation strong.thanks svg{
+    margin-top: -0.1em ;
+}
+
+
+.dataReservation{
+    padding: 0.5em ;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: var(--basicBorderRadius);
+    display: block;
+    margin-top: 1em ;
+}
+
+.dataReservation h2{
+    text-decoration: underline;
+    margin-bottom: 0.3em ;
+}
+
+.productParent{
+    padding: 1em ;
+    margin: 1em 0 ;
+    background-color: white;
+    border-radius: var(--basicBorderRadius);
+}
+
+.productList{
+    border-collapse: collapse;
+}
+
+.productList input{
+    width: 4em ;
+    min-width: 2em;
+    display: inline-block;
+    padding: 0.5em 1em ;
+}
+
+.productList th{
+    color: Silver;
+    border-bottom: 1px solid whitesmoke;
+    font-weight: 600;
+    padding-bottom: 1em ;
+}
+
+table.productList{
+    width: 100%;
+}
+table.productList td{
+    padding: 0.5em ;
+}
+table.productList th{
+    padding: 0.5em ;
+    text-align: center;
+}
+.updateCard span, .totalPriceDisplay{
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+    background-color: var(--basicColor2);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0 0.5em;
+}
+
+div.totalPriceDisplay{
+    margin: 0.5em 0;
+}
+
+.validationMessage a{
+    color: var(--basicColor2);
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5em;
+}
